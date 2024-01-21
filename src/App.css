@@ -1,42 +1,67 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  font-family: 'Fira Code', monospace;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary: #16213E;
+  --secondary: #0F3460;
+  --terceary: #533483;
+  --red: #E94560;
+  --soft-white: #f1f1f1;
+  --white: #fefefe;
+  --black: #111;
+  --gray: #222222;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* css da page Home */
+.container {
+  width: 100%;
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container img {
+  height: 500px;
 }
 
-.card {
-  padding: 2em;
+.container p {
+  font-size: 3rem; /* 48px */
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.read-the-docs {
-  color: #888;
+.container span {
+  color: var(--red);
 }
+
+.btn {
+  width: 250px;
+  height: 50px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.btn-red:hover {
+  background-color: var(--primary);
+}
+
