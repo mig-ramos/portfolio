@@ -20,7 +20,7 @@ function Sobre() {
             <strong>Dev Full Stack</strong>{" "}
           </p>
 
-          <p>Trabalho com desenvolvimento Web desde 2000.</p>
+          <p>Trabalho com desenvolvimento de Sistemas para Internet desde 2020.</p>
 
           <p>Sou apaixonado por transformar ideias em realidade digital.</p>
 
